@@ -24,7 +24,7 @@ class MainController {
 
         val picture = principal?.attributes?.get("picture") ?: principal?.attributes?.get("avatar_url")
         val name = principal?.attributes?.get("name") ?: "Usuário"
-        val email = principal?.attributes?.get("email") ?: principal?.attributes?.get("url")
+        val email = principal?.attributes?.get("email") ?: principal?.attributes?.get("html_url")
 
         return """
             <!DOCTYPE html>
