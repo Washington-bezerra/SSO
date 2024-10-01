@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: oauth2
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ...
+            client-secret: ...
+          github:
+            client-id: ...
+            client-secret: ...
+
+logging:
+  level:
+    org.springframework.security: DEBUG
